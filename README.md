@@ -48,7 +48,7 @@ El proyecto cuenta con dos cuadernos de Jupyter (`.ipynb`) principales que guía
 
 **1. Extracción de Características**
 
-* **Cuaderno:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pamelaFranco/Diplomado-MRI-UNAB/blob/main/radiomics.ipynb)
+**Cuaderno:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pamelaFranco/Diplomado-MRI-UNAB/blob/main/radiomics.ipynb)
 
 En esta sección práctica se aborda cómo transformar una imagen médica cualitativa en datos cuantitativos de alto rendimiento:
 
@@ -60,7 +60,7 @@ En esta sección práctica se aborda cómo transformar una imagen médica cualit
 
 **2. Clasificación de Gliomas**
 
-* **Cuaderno:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pamelaFranco/Diplomado-MRI-UNAB/blob/main/Glioma_classification.ipynb)
+**Cuaderno:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pamelaFranco/Diplomado-MRI-UNAB/blob/main/Glioma_classification.ipynb)
 
 A través de este cuaderno se introduce a los alumnos en el flujo de modelado predictivo, destacando el uso de **Inteligencia Artificial Explicable (XAI)** en medicina para la interpretación biofísica de los resultados:
 
