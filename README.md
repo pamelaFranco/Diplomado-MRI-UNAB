@@ -28,17 +28,17 @@ El proyecto cuenta con dos cuadernos de Jupyter (`.ipynb`) principales que guía
    ```
 
 2. **Instalar las librerías principales** necesarias para el procesamiento médico y el modelado:
-
-```
-pip install pyradiomics numpy pandas scikit-learn matplotlib seaborn SimpleITK
-```
+  
+   ```bash
+   pip install pyradiomics numpy pandas scikit-learn matplotlib seaborn SimpleITK
+   ```
 
 (Nota: `pyradiomics` es la librería estándar para la extracción de características compatibles con IBSI).
 
 3. Iniciar *Jupyter Lab / Notebook*:
-```
-jupyter notebook
-```
+   ```bash
+   jupyter notebook
+   ```
 
 * **Opción B:** Descargar el archivo comprimido directamente en formato ZIP haciendo [clic aquí](https://github.com/pamelaFranco/Diplomado MRI - UNAB/archive/refs/heads/main.zip) (o desde el botón verde **"Code" > "Download ZIP"** en la parte superior de esta página de GitHub).
 
