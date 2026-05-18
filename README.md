@@ -1,7 +1,11 @@
 # Diplomado en Resonancia Magnética (MRI) - UNAB
-## Módulo: Radiómica y Machine Learning aplicado a Neuroimágenes
+## Módulo: Radiómica y **Machine Learning **
 
-Este repositorio contiene el material práctico y los códigos base utilizados para las clases de **Radiómica** y **Machine Learning (ML)** aplicados al análisis de imágenes de Resonancia Magnética, con un enfoque particular en la clasificación de tumores cerebrales (Gliomas).
+<p align="center">
+  <img src="Imagen1.png" alt="Panel de Diagnóstico Interactivo y Gráfico SHAP" width="80%">
+</p>
+
+Este repositorio contiene el material práctico y los códigos base utilizados para las clases de **Radiómica** y **Machine Learning (ML)** aplicados al análisis de imágenes de Resonancia Magnética (MRI), con un enfoque particular en la clasificación de tumores cerebrales (Gliomas).
 
 ---
 
@@ -10,7 +14,7 @@ Este repositorio contiene el material práctico y los códigos base utilizados p
 El proyecto cuenta con dos cuadernos de Jupyter (`.ipynb`) principales que guían el flujo de trabajo biomédico:
 
 * **`radiomics.ipynb`**: Código enfocado en la extracción de características radiómicas a partir de secuencias de RM y segmentaciones (ROIs). Incluye análisis de forma, intensidad de píxel y texturas (matrices de co-ocurrencia, etc.).
-* **`Glioma_classification.ipynb`**: Código dedicado a la etapa de Machine Learning. Toma las características extraídas (u otras bases de datos) para entrenar, validar y evaluar modelos de clasificación que permitan diferenciar tipos o grados de Gliomas.
+* **`Glioma_classification.ipynb`**: Código dedicado a la etapa de **Machine Learning**. Toma las características extraídas (u otras bases de datos) para entrenar, validar y evaluar modelos de clasificación que permitan diferenciar tipos o grados de Gliomas.
 
 ---
 
@@ -42,7 +46,7 @@ jupyter notebook
 
 **1. Extracción de Características**
 
-* **Cuaderno:** * **Cuaderno:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pamelaFranco/Diplomado-MRI-UNAB/blob/main/radiomics.ipynb)
+* **Cuaderno:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pamelaFranco/Diplomado-MRI-UNAB/blob/main/radiomics.ipynb)
 
 En esta sección práctica se aborda cómo transformar una imagen médica cualitativa en datos cuantitativos de alto rendimiento:
 
@@ -50,21 +54,22 @@ En esta sección práctica se aborda cómo transformar una imagen médica cualit
 
 * Configuración del extractor PyRadiomics (normalización de intensidad, remuestreo/resampling).
 
-* Obtención de características de primer orden, forma (Shape) y texturas (GLCM, GLRLM, GLSZM).
+* Obtención de características de textura (GLCM).
 
 **2. Clasificación de Gliomas**
 
-* **Cuaderno:** * **Cuaderno:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pamelaFranco/Diplomado-MRI-UNAB/blob/main/Glioma_classification.ipynb)
+* **Cuaderno:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pamelaFranco/Diplomado-MRI-UNAB/blob/main/Glioma_classification.ipynb)
 
-Una vez obtenidos los datos, se aplican técnicas de Inteligencia Artificial para la toma de decisiones clínicas:
+A través de este cuaderno se introduce a los alumnos en el flujo de modelado predictivo, destacando el uso de **Inteligencia Artificial Explicable (XAI)** en medicina para la interpretación biofísica de los resultados:
 
-* Preprocesamiento de datos (limpieza de valores nulos, escalado de variables).
-
-* Selección de características relevantes (reducción de dimensionalidad).
-
-* Entrenamiento de clasificadores (ej. Random Forest).
-
-* Evaluación mediante métricas asistidas por computadora: Curva ROC, AUC, Matriz de Confusión, Sensibilidad y Especificidad.
+* **Preprocesamiento y Curación de Datos:** Preparación y normalización estadística de la base de datos radiómica, simulando la carga diagnóstica y asegurando la consistencia antes del modelado.
+* **Entrenamiento del Clasificador:** Implementación de un algoritmo basado en **Random Forest** (Bosques Aleatorios), ideal para la toma de decisiones complejas a partir de múltiples variables de textura e intensidad extraídas.
+* **Panel de Diagnóstico Médico Interactivo:** Diseño de una interfaz dinámica (mediante *widgets*) que simula un entorno clínico real. Permite seleccionar diferentes pacientes de estudio (ej. *Paciente46*) para contrastar el diagnóstico predictivo de la IA con la referencia histológica real, reportando un nivel de confianza probabilístico.
+* **Explicabilidad Médica con Valores SHAP (SHapley Additive exPlanations):** El núcleo analítico del código utiliza teoría de juegos cooperativos para calcular la contribución exacta de cada característica radiómica en la predicción final. Esto permite realizar un **Análisis Biofísico** visualizando qué descriptores de textura o forma específicos inclinaron la balanza hacia un diagnóstico de "Grado 2" o mayor.
+* **Sección Académica de Discusión Metodológica:** Para finalizar el laboratorio, se guía a los estudiantes a reflexionar críticamente sobre los desafíos técnicos que impiden el uso inmediato de un modelo en la clínica real:
+  1. El problema del desbalance de datos en bases de datos biomédicas.
+  2. El impacto de los procesos estocásticos y el control de semillas aleatorias (`random_state`) para la reproducibilidad científica.
+  3. El rol de la **Nested Cross-Validation (Validación Anidada)** como el estándar de oro para eliminar el *sesgo de selección* en la optimización de parámetros.
 
 ---
 
