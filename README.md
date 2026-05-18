@@ -1,5 +1,5 @@
 # Diplomado en Resonancia Magnética (MRI) - UNAB
-## Módulo: Radiómica y **Machine Learning **
+## Módulo: Radiómica y *Machine Learning*
 
 <p align="center">
   <img src="Imagen1.png" alt="Panel de Diagnóstico Interactivo y Gráfico SHAP" width="80%">
@@ -20,14 +20,14 @@ El proyecto cuenta con dos cuadernos de Jupyter (`.ipynb`) principales que guía
 
 ## Requisitos e Instalación
 
-Para ejecutar estos cuadernos de forma local, se recomienda contar con un entorno de Python (versión 3.8 o superior). 
+* **Opción A:** Para ejecutar estos cuadernos de forma local, se recomienda contar con un entorno de Python (versión 3.8 o superior). 
 
 1. **Clonar o descargar** este repositorio en tu máquina local:
    ```bash
-   cd C:\Users\pfran\Desktop\Diplomado MRI - UNAB
+   git clone [https://github.com/pamelaFranco/Diplomado MRI - UNAB.git](https://github.com/pamelaFranco/Diplomado MRI - UNAB.git)
    ```
 
-2. Instalar las librerías principales necesarias para el procesamiento médico y el modelado:
+2. **Instalar las librerías principales** necesarias para el procesamiento médico y el modelado:
 
 ```
 pip install pyradiomics numpy pandas scikit-learn matplotlib seaborn SimpleITK
@@ -39,6 +39,8 @@ pip install pyradiomics numpy pandas scikit-learn matplotlib seaborn SimpleITK
 ```
 jupyter notebook
 ```
+
+* **Opción B:** Descargar el archivo comprimido directamente en formato ZIP haciendo [clic aquí](https://github.com/pamelaFranco/Diplomado MRI - UNAB/archive/refs/heads/main.zip) (o desde el botón verde **"Code" > "Download ZIP"** en la parte superior de esta página de GitHub).
 
 ---
 
