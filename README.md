@@ -40,7 +40,10 @@ jupyter notebook
 
 ## Contenido Académico
 
-1. Extracción de Características (`radiomics.ipynb`)
+**1. Extracción de Características**
+
+* **Cuaderno:** * **Cuaderno:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pamelaFranco/Diplomado-MRI-UNAB/blob/main/radiomics.ipynb)
+
 En esta sección práctica se aborda cómo transformar una imagen médica cualitativa en datos cuantitativos de alto rendimiento:
 
 * Carga de volúmenes médicos (formatos .nii / .nii.gz).
@@ -49,7 +52,10 @@ En esta sección práctica se aborda cómo transformar una imagen médica cualit
 
 * Obtención de características de primer orden, forma (Shape) y texturas (GLCM, GLRLM, GLSZM).
 
-2. Clasificación de Gliomas (`Glioma_classification.ipynb`)
+**2. Clasificación de Gliomas**
+
+* **Cuaderno:** * **Cuaderno:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pamelaFranco/Diplomado-MRI-UNAB/blob/main/Glioma_classification.ipynb)
+
 Una vez obtenidos los datos, se aplican técnicas de Inteligencia Artificial para la toma de decisiones clínicas:
 
 * Preprocesamiento de datos (limpieza de valores nulos, escalado de variables).
