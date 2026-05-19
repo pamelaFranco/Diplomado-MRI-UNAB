@@ -11,7 +11,14 @@ Este repositorio contiene el material práctico y los códigos base utilizados p
 
 ## Estructura del Repositorio
 
-El proyecto cuenta con dos cuadernos de Jupyter (`.ipynb`) principales que guían el flujo de trabajo biomédico en la carpeta `Codes`:
+El proyecto está organizado de la siguiente manera:
+
+```text
+├── Codes/
+│   ├── radiomics.ipynb               # Extracción de características con PyRadiomics
+│   └── Glioma_classification.ipynb   # Modelado predictivo, SHAP e interfaz interactiva
+├── Imagen1.png                       # Imagen de muestra del panel diagnóstico
+└── README.md                         # Documentación del laboratorio
 
 * **`radiomics.ipynb`**: Código enfocado en la extracción de características radiómicas a partir de secuencias de RM y segmentaciones (ROIs). Incluye análisis de forma, intensidad de píxel y texturas (matrices de co-ocurrencia, etc.).
 * **`Glioma_classification.ipynb`**: Código dedicado a la etapa de **Machine Learning**. Toma las características extraídas (u otras bases de datos) para entrenar, validar y evaluar modelos de clasificación que permitan diferenciar tipos o grados de Gliomas.
@@ -20,28 +27,32 @@ El proyecto cuenta con dos cuadernos de Jupyter (`.ipynb`) principales que guía
 
 ## Requisitos e Instalación
 
-* **Opción A:** Para ejecutar estos cuadernos de forma local, se recomienda contar con un entorno de Python (versión 3.8 o superior). 
+Puedes ejecutar este laboratorio de dos maneras:
+
+* **Opción A: Ejecución Local (Recomendado)** 
+Se requiere contar con un entorno de Python (versión 3.8 o superior).
 
 1. **Clonar o descargar** este repositorio en tu máquina local:
    ```bash
    git clone [https://github.com/pamelaFranco/Diplomado MRI - UNAB.git](https://github.com/pamelaFranco/Diplomado MRI - UNAB.git)
    ```
 
-2. **Instalar las librerías principales** necesarias para el procesamiento médico y el modelado:
+2. **Crear e instalar las librerías** necesarias en tu entorno:
   
    ```bash
-   pip install pyradiomics numpy pandas scikit-learn matplotlib seaborn SimpleITK
+   pip install pyradiomics numpy pandas scikit-learn matplotlib seaborn SimpleITK notebook
    ```
 
 (Nota: `pyradiomics` es la librería estándar para la extracción de características compatibles con IBSI).
 
-3. Iniciar *Jupyter Lab / Notebook*:
+3. **Iniciar Jupyter Notebook**:
    ```bash
    jupyter notebook
    ```
 
-* **Opción B:** Descargar el archivo comprimido directamente en formato ZIP haciendo <a href="https://github.com/pamelaFranco/Diplomado MRI - UNAB/archive/refs/heads/main.zip">clic aquí</a> (o desde el botón verde **"Code" > "Download ZIP"** en la parte superior de esta página de GitHub).
+* **Opción B: Descarga Directa**
 
+Si no utilizas Git, puedes descargar el proyecto completo en un archivo comprimido haciendo <https://github.com/pamelaFranco/Diplomado MRI - UNAB/archive/refs/heads/main.zip> (o desde el botón verde **"Code" > "Download ZIP"** en la parte superior de esta página de GitHub).
 ---
 
 ## Contenido Académico
@@ -76,15 +87,16 @@ A través de este cuaderno se introduce a los alumnos en el flujo de modelado pr
 ---
 
 
-## Institución
-Universidad Andrés Bello (UNAB)
+## Información Institucional
+* **Institución:** Universidad Andrés Bello (UNAB)
 
-Programa: Diplomado en Resonancia Magnética (MRI)
+* **Programa:** Diplomado en Resonancia Magnética (MRI)
 
-Propósito: Material docente / Laboratorio práctico.
+* **Propósito:** Material docente / Laboratorio práctico de uso académico.
 
 --- 
 
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
