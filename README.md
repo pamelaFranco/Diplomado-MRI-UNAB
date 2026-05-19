@@ -19,6 +19,7 @@ El proyecto está organizado de la siguiente manera:
 │   └── Glioma_classification.ipynb   # Modelado predictivo, SHAP e interfaz interactiva
 ├── Imagen1.png                       # Imagen de muestra del panel diagnóstico
 └── README.md                         # Documentación del laboratorio
+```
 
 * **`radiomics.ipynb`**: Código enfocado en la extracción de características radiómicas a partir de secuencias de RM y segmentaciones (ROIs). Incluye análisis de forma, intensidad de píxel y texturas (matrices de co-ocurrencia, etc.).
 * **`Glioma_classification.ipynb`**: Código dedicado a la etapa de **Machine Learning**. Toma las características extraídas (u otras bases de datos) para entrenar, validar y evaluar modelos de clasificación que permitan diferenciar tipos o grados de Gliomas.
