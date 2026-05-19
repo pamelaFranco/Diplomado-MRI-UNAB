@@ -2,7 +2,7 @@
 ## Módulo: Radiómica y *Machine Learning*
 
 <p align="center">
-  <img src="Imagen1.png" alt="Panel de Diagnóstico Interactivo y Gráfico SHAP" width="80%">
+  <img src="Figures/Imagen1.png" alt="Panel de Diagnóstico Interactivo y Gráfico SHAP" width="80%">
 </p>
 
 Este repositorio contiene el material práctico y los códigos base utilizados para las clases de **Radiómica** y **Machine Learning (ML)** aplicados al análisis de imágenes de Resonancia Magnética (MRI), con un enfoque particular en la clasificación de tumores cerebrales (Gliomas).
@@ -16,6 +16,7 @@ El proyecto está organizado de la siguiente manera:
 ```text
 ├── Codes/
 │   ├── radiomics.ipynb               # Extracción de características con PyRadiomics
+│   └── ML.ipynb                      # Pipeline de Radiómica avanzada en la selección de características y clasificación automatizada de gliomas
 │   └── Glioma_classification.ipynb   # Modelado predictivo, SHAP e interfaz interactiva
 ├── Figures/                          # Imágenes que conforman el laboratorio virtual
 ├── Dataset/                          # Extracción de radiómica en imágenes T1 para la clasificación de gliomas
@@ -23,6 +24,7 @@ El proyecto está organizado de la siguiente manera:
 ```
 
 * **`radiomics.ipynb`**: Código enfocado en la extracción de características radiómicas a partir de secuencias de RM y segmentaciones (ROIs). Incluye análisis de forma, intensidad de píxel y texturas (matrices de co-ocurrencia, etc.).
+* **`ML.ipynb`**: Código enfocado en el procesamiento de datos radiómicos previamente extraídos de secuencias T1. Incluye la estandarización de las variables, un filtrado estadístico mediante el método ANOVA (`SelectKBest`) para identificar las características más significativas, la visualización de la separación de clases en un espacio bidimensional utilizando el algoritmo no lineal t-SNE, y concluye con el entrenamiento de una regresión logística evaluada mediante una matriz de confusión para clasificar gliomas en bajo (LGG) y alto grado (HGG).
 * **`Glioma_classification.ipynb`**: Código dedicado a la etapa de **Machine Learning**. Toma las características extraídas (u otras bases de datos) para entrenar, validar y evaluar modelos de clasificación que permitan diferenciar tipos o grados de Gliomas.
 
 ---
@@ -71,7 +73,22 @@ En esta sección práctica se aborda cómo transformar una imagen médica cualit
 
 * Obtención de características de textura (GLCM).
 
-**2. Clasificación de Gliomas**
+**2. Selección de Características y Modelado**
+
+**Cuaderno:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pamelaFranco/Diplomado-MRI-UNAB/blob/main/Codes/ML.ipynb)
+
+En esta sección práctica se aborda cómo procesar la matriz de datos radiómicos para filtrar el ruido informático y construir un modelo predictivo:
+
+* Normalización estadística de las variables mediante un escalamiento Z-score.
+
+* Selección de las características más discriminantes usando un filtro ANOVA estadístico.
+
+* Diagnóstico visual de la separación de clases en un plano 2D mediante el algoritmo no lineal t-SNE.
+
+* Entrenamiento de un clasificador de regresión logística para diferenciar LGG de HGG, evaluado mediante una matriz de confusión.
+
+
+**3. Interpretabilidad en la clasificación de Gliomas**
 
 **Cuaderno:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pamelaFranco/Diplomado-MRI-UNAB/blob/main/Codes/Glioma_classification.ipynb)
 
