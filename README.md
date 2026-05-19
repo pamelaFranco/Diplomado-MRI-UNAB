@@ -52,8 +52,8 @@ Se requiere contar con un entorno de Python (versión 3.8 o superior).
    ```
 
 * **Opción B: Descarga Directa**
+  Si no utilizas Git, puedes descargar el proyecto completo en un archivo comprimido haciendo **[clic aquí para descargar el ZIP](https://github.com/pamelaFranco/Diplomado%20MRI%20-%20UNAB/archive/refs/heads/main.zip)** (o desde el botón verde **"Code" > "Download ZIP"** en la parte superior de esta página de GitHub).
 
-Si no utilizas Git, puedes descargar el proyecto completo en un archivo comprimido haciendo <https://github.com/pamelaFranco/Diplomado MRI - UNAB/archive/refs/heads/main.zip> (o desde el botón verde **"Code" > "Download ZIP"** en la parte superior de esta página de GitHub).
 ---
 
 ## Contenido Académico
