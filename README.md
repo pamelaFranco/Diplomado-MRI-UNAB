@@ -17,7 +17,8 @@ El proyecto está organizado de la siguiente manera:
 ├── Codes/
 │   ├── radiomics.ipynb               # Extracción de características con PyRadiomics
 │   └── Glioma_classification.ipynb   # Modelado predictivo, SHAP e interfaz interactiva
-├── Imagen1.png                       # Imagen de muestra del panel diagnóstico
+├── Figures/                          # Imágenes que conforman el laboratorio virtual
+├── Dataset/                          # Extracción de radiómica en imágenes T1 para la clasificación de gliomas
 └── README.md                         # Documentación del laboratorio
 ```
 
