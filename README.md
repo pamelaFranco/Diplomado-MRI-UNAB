@@ -40,7 +40,7 @@ El proyecto cuenta con dos cuadernos de Jupyter (`.ipynb`) principales que guía
    jupyter notebook
    ```
 
-* **Opción B:** Descargar el archivo comprimido directamente en formato ZIP haciendo [clic aquí](https://github.com/pamelaFranco/Diplomado MRI - UNAB/archive/refs/heads/main.zip) (o desde el botón verde **"Code" > "Download ZIP"** en la parte superior de esta página de GitHub).
+* **Opción B:** Descargar el archivo comprimido directamente en formato ZIP haciendo <a href="https://github.com/pamelaFranco/Diplomado MRI - UNAB/archive/refs/heads/main.zip">clic aquí</a> (o desde el botón verde **"Code" > "Download ZIP"** en la parte superior de esta página de GitHub).
 
 ---
 
