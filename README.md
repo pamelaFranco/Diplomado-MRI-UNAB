@@ -19,9 +19,10 @@ El proyecto está organizado de la siguiente manera:
 │   └── ML.ipynb                      # Pipeline de Radiómica avanzada en la selección de características y clasificación automatizada de gliomas
 │   └── Glioma_classification.ipynb   # Modelado predictivo, SHAP e interfaz interactiva
 ├── Clase/
-│   ├── ML_UNAB.pdf                   # Clase en formato PDF
+│   ├── ML_UNAB.pdf                   # Diapositivas en formato PDF
 ├── Figures/                          # Imágenes que conforman el laboratorio virtual
 ├── Dataset/                          # Extracción de radiómica en imágenes T1 para la clasificación de gliomas
+├── Material Escrito/                 # Material escrito para profundizar contenidos en formato PDF
 └── README.md                         # Documentación del laboratorio
 ```
 
